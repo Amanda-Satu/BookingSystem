@@ -1,5 +1,7 @@
 package za.ac.cput.domain;
 
+//Amanda Satu
+
 public class Customer {
 
     private int customerID;
