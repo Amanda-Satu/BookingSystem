@@ -1,6 +1,9 @@
 package za.ac.cput;
 
+import za.ac.cput.domain.Customer;
 import za.ac.cput.domain.Review; // Import the Review class
+import za.ac.cput.factory.CustomerFactory;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +22,8 @@ public class Main {
 
         // Print the Review object to verify
         System.out.println(review);
+
+
+
     }
 }
