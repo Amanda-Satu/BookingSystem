@@ -67,7 +67,7 @@ public class Painter {
         private String role;
 
 
-        public Painter.Builder setCustomerID(int customerID) {
+        public Painter.Builder setPainterID(int customerID) {
             this.painterID = painterID;
             return this;
         }
