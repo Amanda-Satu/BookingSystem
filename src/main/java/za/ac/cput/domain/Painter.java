@@ -46,7 +46,7 @@ public class Painter {
         private String phoneNumber;
 
         
-        public Painter.Builder setCustomerID(int customerID) {
+        public Painter.Builder setPainterID(int painterID) {
             this.painterID = painterID;
             return this;
         }
