@@ -1,9 +1,9 @@
 package za.ac.cput.domain;
 /*
-Siyamthanda Rolomana
+Author: Siyamthanda Rolomana (217149073)
+Date: 26 March 2025
  */
 public class Admin {
-    private String admin_Id;
     private String email;
     private String password;
     private String role;
@@ -12,13 +12,10 @@ public class Admin {
     }
 
     private Admin (Builder builder) {
-        this.admin_Id = builder.admin_Id;
         this.email = builder.email;
         this.password = builder.password;
         this.role = builder.role;
-    }
-    public  String Admin_Id(){
-        return  admin_Id;
+
     }
     public String getEmail() {
         return email;
@@ -35,7 +32,6 @@ public class Admin {
     @Override
     public String toString() {
         return "Admin{" +
-                "admin_Id='" + admin_Id + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
@@ -43,15 +39,9 @@ public class Admin {
     }
 
     public static class Builder {
-
-        private String admin_Id;
         private String email;
         private String password;
         private String role;
-        public Builder setAdmin_Id(String admin_Id) {
-            this.admin_Id = admin_Id;
-            return this;
-        }
         public Builder setEmail(String email) {
             this.email = email;
             return this;
