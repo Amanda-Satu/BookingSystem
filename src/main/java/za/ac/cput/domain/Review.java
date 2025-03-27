@@ -1,8 +1,7 @@
 package za.ac.cput.domain;
+//minathi shezi
+//222353775
 
-/*
-minathi shezi
- */
 public class Review {
     private String reviewId;
     private String bookingId;
@@ -11,7 +10,6 @@ public class Review {
     private String comment;
     private int rating;
 
-    // Private Constructor for Builder Pattern
     private Review(Builder builder) {
         this.reviewId = builder.reviewId;
         this.bookingId = builder.bookingId;
