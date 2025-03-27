@@ -1,9 +1,10 @@
 package za.ac.cput.factory;
+//Sinhle Xiluva Mthethwa
+//221802797
 
 import za.ac.cput.domain.Painter;
 import za.ac.cput.util.Helper;
 
-import javax.swing.*;
 
 
 public class PainterFactory {

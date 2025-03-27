@@ -1,4 +1,6 @@
 package za.ac.cput.factory;
+//Sinhle Xiluva Mthethwa
+//221802797
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.domain.Painter;

@@ -1,4 +1,6 @@
 package za.ac.cput.domain;
+//Sinhle Xiluva Mthethwa
+//221802797
 
 public class Painter {
 
