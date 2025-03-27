@@ -1,6 +1,5 @@
 package za.ac.cput.domain.Factory;
 
-import static org.junit.jupiter.api.Assertions.*;
 /* author:sphesihle slingile
 230310257
 date: 26 March 2025
