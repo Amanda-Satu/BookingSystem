@@ -1,4 +1,6 @@
 package za.ac.cput.domain;
+//Sinhle Xiluva Mthethwa
+//221802797
 
 public class Painter {
 
@@ -6,6 +8,7 @@ public class Painter {
     private String name;
     private String email;
     private String phoneNumber;
+    private String role;
 
     private Painter() {
 
@@ -15,6 +18,7 @@ public class Painter {
         this.name = builder.name;
         this.email = builder.email;
         this.phoneNumber = builder.phoneNumber;
+        this.role = builder.role;
     }
     public String getPainterID() {
         return painterID;
@@ -29,14 +33,18 @@ public class Painter {
         return phoneNumber;
     }
 
+    public String getRole() {
+        return role;
+    }
 
     @Override
     public String toString() {
-        return "Painter{" + 
+        return "Painter{" +
                 ", painterID='" + painterID + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", role='" + role + '\'' +
                 '}';
     }
     public static class Builder {
@@ -44,9 +52,10 @@ public class Painter {
         private String name;
         private String email;
         private String phoneNumber;
+        private String role;
 
-        
-        public Painter.Builder setPainterID(int painterID) {
+
+        public Painter.Builder setPainterID(String painterID) {
             this.painterID = painterID;
             return this;
         }
@@ -66,13 +75,18 @@ public class Painter {
             this.phoneNumber = phoneNumber;
             return this;
         }
+        public Painter.Builder setRole(String role) {
+            this.role = role;
+            return this;
+        }
 
-        
+
         public Builder copy(Painter painter) {
             this.painterID = painter.painterID;
             this.name = painter.name;
             this.email = painter.email;
             this.phoneNumber = painter.phoneNumber;
+            this.role = painter.role;
             return this;
         }
         public Painter build(){
@@ -80,4 +94,3 @@ public class Painter {
         }
     }
 }
-
