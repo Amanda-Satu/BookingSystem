@@ -23,7 +23,7 @@ public class Booking {
         this.totalCost = builder.totalCost;
     }
 
-    // Getters
+    // Getters+
     public String getBookingId() { return bookingId; }
     public String getCustomerId() { return customerId; }
     public String getPainterId() { return painterId; }

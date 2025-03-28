@@ -1,8 +1,10 @@
 package za.ac.cput.domain;
 
+//Amanda Satu(221094008)
+
 public class Customer {
 
-    private int customerID;
+    private String customerID;
     private String name;
     private String email;
     private String password;
@@ -23,7 +25,7 @@ public class Customer {
         this.role = builder.role;
     }
 
-    public int getCustomerID() {
+    public String getCustomerID() {
         return customerID;
     }
 
@@ -65,7 +67,7 @@ public class Customer {
     }
 
     public static class Builder {
-        private int customerID;
+        private String customerID;
         private String name;
         private String email;
         private String password;
@@ -74,7 +76,7 @@ public class Customer {
         private String role;
 
 
-        public Builder setCustomerID(int customerID) {
+        public Builder setCustomerID(String customerID) {
             this.customerID = customerID;
             return this;
         }
