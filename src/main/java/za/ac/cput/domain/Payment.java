@@ -28,7 +28,7 @@ public class Payment {
     public int getBookingId(){
         return bookingId;
     }
-    private double amount(){
+    public double amount(){
         return amount;
     }
     public LocalDate getPaymentDate(){

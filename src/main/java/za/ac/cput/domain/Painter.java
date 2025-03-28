@@ -39,7 +39,7 @@ public class Painter {
 
     @Override
     public String toString() {
-        return "Painter{" + 
+        return "Painter{" +
                 ", painterID='" + painterID + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
@@ -54,7 +54,7 @@ public class Painter {
         private String phoneNumber;
         private String role;
 
-        
+
         public Painter.Builder setPainterID(String painterID) {
             this.painterID = painterID;
             return this;
@@ -80,7 +80,7 @@ public class Painter {
             return this;
         }
 
-        
+
         public Builder copy(Painter painter) {
             this.painterID = painter.painterID;
             this.name = painter.name;
@@ -94,4 +94,3 @@ public class Painter {
         }
     }
 }
-

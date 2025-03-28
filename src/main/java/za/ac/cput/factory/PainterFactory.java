@@ -20,6 +20,6 @@ public class PainterFactory {
                 .setEmail(email)
                 .setRole(role)
                 .build();
-}
+    }
 
 }
