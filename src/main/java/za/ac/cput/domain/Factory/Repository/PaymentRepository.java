@@ -1,13 +1,10 @@
 package za.ac.cput.domain.Factory.Repository;
 
 import za.ac.cput.domain.Payment;
-/* author:sphesihle slingile
-230310257
-date: 28 March 2025
- */
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class PaymentRepository implements IPaymentRepository {
     private static PaymentRepository repository = null;
     private List<Payment> paymentList;
@@ -41,26 +38,25 @@ public class PaymentRepository implements IPaymentRepository {
     public Payment read(Integer id) {
         for(Payment payment : paymentList){
             if(payment.getPaymentId() == id){
-                return payment;
-            }}
-        return null;}
+                    return payment;
+                }}
+    return null;}
 
     @Override
     public Payment update(Payment payment){
-        Payment oldPayment = read(payment.getPaymentId());
-        if (oldPayment != null) {
-            paymentList.remove(oldPayment);
-            paymentList.add(payment);
-            return payment;
-        }
-        return null;}
+                Payment oldPayment = read(payment.getPaymentId());
+                if (oldPayment != null) {
+                    paymentList.remove(oldPayment);
+                    paymentList.add(payment);
+                    return payment;
+                }
+                return null;}
     public boolean delete(Integer id){
-        Payment oldPayment = read(id);
-        if (oldPayment != null) {
-            paymentList.remove(oldPayment);
+             Payment oldPayment = read(id);
+             if (oldPayment != null) {
+                 paymentList.remove(oldPayment);
 
-        }
-        return false;}
+             }
+             return false;}
 
 }
-

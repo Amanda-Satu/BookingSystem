@@ -1,11 +1,13 @@
 package za.ac.cput.domain.Factory.Repository;
 
 import za.ac.cput.domain.Service;
-import static org.junit.jupiter.api.Assertions.*;
 //import za.ac.cput.Factory.Repository.ServiceRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 /* author:sphesihle slingile
 230310257
 date: 28 March 2025
@@ -25,8 +27,8 @@ class ServiceRepositoryTest {
     @Test
     public void create(){
         Service serviceCreated = repository.create(service);
-        assertNotNull(serviceCreated);
-        assertEquals(service.getServiceId(), serviceCreated.getServiceId());
+            assertNotNull(serviceCreated);
+            assertEquals(service.getServiceId(), serviceCreated.getServiceId());
     }
     @Test
     public void read(){
@@ -55,5 +57,9 @@ class ServiceRepositoryTest {
         assertFalse(deleted);
 
     }
-
+@Test
+    public void getAll(){
+        repository.create(service);
+        assertFalse(repository.getAll().isEmpty());
+}
 }
